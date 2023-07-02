@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 import os
+import django_heroku
 from pathlib import Path
 
 import dj_database_url
@@ -33,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["django2.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["django2.herokuapp.com", "localhost", 'django2-f8b3c874795f.herokuapp.com']
 
 
 # Application definition
